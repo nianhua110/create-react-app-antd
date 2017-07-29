@@ -1,8 +1,17 @@
-import React, { Component } from 'react';
-import { Button } from 'antd';
-import './App.css';
-
+import React, {Component} from "react";
+import {Button} from "antd";
+import "./App.css";
+import axios from "axios";
 class App extends Component {
+  constructor(props) {
+    super(props)
+    axios("http://www.baidu.com")
+      .then(res => {
+        console.log(res.data);
+      })
+    this.state={ ky: 'he'}
+  }
+
   render() {
     return (
       <div className="App">
