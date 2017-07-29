@@ -8,6 +8,8 @@
 ## Preview
 
 ```bash
+$ mkdir test && cd test
+$ git clone https://github.com/nianhua110/create-react-app-antd.git
 $ npm install
 $ npm start
 ```
